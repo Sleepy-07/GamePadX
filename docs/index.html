@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamePadX — Your Android Phone, The Ultimate Controller for Gaming & Productivity</title>
+    <meta name="description" content="Turn your Android phone into a high-performance PC gamepad, motion aiming controller, desktop trackpad, and remote launcher with ultra low latency.">
+    <meta name="keywords" content="GamePadX, PC controller server, virtual gamepad, Xbox 360 controller emulator, Android PC controller, Gyroscope aiming, remote launcher, trackpad mouse">
+    <meta name="author" content="Sleepy-07 / GamePadX">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="GamePadX — Your Android Phone, The Ultimate Controller for Gaming & Productivity">
+    <meta property="og:description" content="Virtual Xbox 360 controller, custom PC controller layouts, keystroke combos, gyro aiming, desktop trackpad, and quick app launchers.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/logo.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Lucide Minimal Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Technical Grid & Ambient Lighting -->
+    <div class="bg-canvas">
+        <div class="grid-pattern"></div>
+        <div class="ambient-glow glow-top"></div>
+        <div class="ambient-glow glow-mid"></div>
+    </div>
+
+    <!-- ==================== FLOATING DOCK NAVBAR (iOS Glassmorphism Style) ==================== -->
+    <header class="dock-header-wrapper">
+        <nav class="dock-navbar" id="dockNavbar">
+            <!-- Brand -->
+            <a href="#" class="dock-brand">
+                <div class="dock-logo-box">
+                    <img src="assets/logo.png" alt="GamePadX" class="dock-logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <i data-lucide="gamepad-2" class="dock-fallback-icon" style="display: none;"></i>
+                </div>
+                <span class="dock-brand-name">GamePad<span class="dock-brand-accent">X</span></span>
+            </a>
+
+            <!-- Navigation Links -->
+            <div class="dock-nav-links" id="dockNavLinks">
+                <a href="#overview" class="dock-link active">Overview</a>
+                <a href="#features" class="dock-link">Features</a>
+                <a href="#download" class="dock-link">Download</a>
+            </div>
+
+            <!-- Action Buttons (Star Project & Get Server) -->
+            <div class="dock-actions">
+                <a href="https://github.com/Sleepy-07/GamePadX-Pc-Controller-Server" target="_blank" rel="noopener noreferrer" class="dock-btn dock-btn-ghost" title="Star GamePadX on GitHub">
+                    <i data-lucide="star"></i>
+                    <span>Star Project</span>
+                </a>
+                <a href="#download" class="dock-btn dock-btn-solid">
+                    <span>Get Server</span>
+                </a>
+                <button class="dock-mobile-toggle" id="dockMobileToggle" aria-label="Toggle menu">
+                    <i data-lucide="menu" id="menuIcon"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ==================== HERO SECTION ==================== -->
+        <section class="hero-section" id="overview">
+            <div class="container hero-container">
+                <!-- Headline & Intro -->
+                <div class="hero-header-box">
+                    <h1 class="hero-headline">
+                        Your Android Phone,<br>
+                        <span class="serif-italic">The Ultimate Controller for Gaming & Productivity</span>
+                    </h1>
+                    <p class="hero-subline">
+                        Transform your smartphone into a virtual Xbox gamepad, precision motion aiming controller, wireless desktop trackpad, and remote launcher for your PC.
+                    </p>
+                </div>
+
+                <!-- 3-Device Visual Showcase -->
+                <div class="hero-stage-wrapper">
+                    <div class="hero-devices-stage">
+                        <!-- 1. Center PC Display: 16:9 PC Game (GameImage.png) -->
+                        <div class="laptop-device-frame">
+                            <div class="laptop-lid">
+                                <div class="laptop-screen-content">
+                                    <img src="assets/GameImage.png" alt="PC Gameplay with GamePadX" class="laptop-game-img">
+                                    <div class="laptop-screen-overlay-glare"></div>
+                                </div>
+                            </div>
+                            <div class="laptop-base">
+                                <div class="laptop-notch"></div>
+                            </div>
+                        </div>
+
+                        <!-- 2. Left Portrait Phone: 9:20 App Home (App_Home_Screen.jpg) -->
+                        <div class="phone-device-card portrait-card animate-phone-float">
+                            <div class="device-tag-header">App Home & Sync</div>
+                            <div class="phone-frame-clean portrait-frame">
+                                <img src="assets/App_Home_Screen.jpg" alt="GamePadX Mobile App Home" class="pixel-perfect-img">
+                            </div>
+                        </div>
+
+                        <!-- 3. Right Landscape Phone: 20:9 Controller Layout (layoutImage1.jpg) -->
+                        <div class="phone-device-card landscape-card animate-landscape-float">
+                            <div class="device-tag-header">In-Game Controller Layout</div>
+                            <div class="phone-frame-clean landscape-frame">
+                                <img src="assets/layoutImage1.jpg" alt="GamePadX Active Controller Layout" class="pixel-perfect-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Floating Feature Badges Strip -->
+                <div class="hero-feature-pills-strip">
+                    <div class="feature-pill-badge">
+                        <i data-lucide="zap"></i>
+                        <span>Ultra Low-Latency</span>
+                    </div>
+                    <div class="feature-pill-badge">
+                        <i data-lucide="wifi"></i>
+                        <span>USB & Wireless</span>
+                    </div>
+                    <div class="feature-pill-badge">
+                        <i data-lucide="gamepad-2"></i>
+                        <span>Xbox & PC Controller Setup</span>
+                    </div>
+                    <div class="feature-pill-badge">
+                        <i data-lucide="layers"></i>
+                        <span>Multi-Key Keystroke Combos</span>
+                    </div>
+                    <div class="feature-pill-badge">
+                        <i data-lucide="folder-sync"></i>
+                        <span>Quick App & Directory Launches</span>
+                    </div>
+                    <div class="feature-pill-badge">
+                        <i data-lucide="crosshair"></i>
+                        <span>Gyroscope</span>
+                    </div>
+                    <div class="feature-pill-badge">
+                        <i data-lucide="mouse-pointer"></i>
+                        <span>Mouse & Keyboard</span>
+                    </div>
+                </div>
+
+                <!-- Hero Action Buttons with Exact Download Links -->
+                <div class="hero-actions-row">
+                    <a href="https://github.com/Sleepy-07/GamePadX-Pc-Controller-Server/releases" target="_blank" rel="noopener noreferrer" class="btn btn-primary-pill" id="heroPrimaryDownload">
+                        <i data-lucide="download"></i>
+                        <span>Download Windows Server</span>
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.sleepingheads.gamepadx" target="_blank" rel="noopener noreferrer" class="btn btn-secondary-pill" id="heroMobileDownload">
+                        <i data-lucide="smartphone"></i>
+                        <span>Get on Google Play</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== CORE CAPABILITIES ==================== -->
+        <section class="section capabilities-section" id="features">
+            <div class="container">
+                <div class="section-title-box text-center">
+                    <span class="section-micro-label">CORE FEATURES</span>
+                    <h2 class="section-heading">
+                        Powerful Capabilities,<br>
+                        <span class="serif-italic">Simple and Fast</span>
+                    </h2>
+                    <p class="section-subtext">
+                        Everything you need for PC gaming, remote shortcuts, and desktop control in one app.
+                    </p>
+                </div>
+
+                <div class="capabilities-grid">
+                    <!-- Feature 1: Ultra Low Latency -->
+                    <div class="capability-card">
+                        <div class="cap-icon-box">
+                            <i data-lucide="zap"></i>
+                        </div>
+                        <h3 class="cap-title">Ultra Low Latency</h3>
+                        <p class="cap-desc">
+                            Instant touch and button response for fast, fluid gaming and desktop control.
+                        </p>
+                    </div>
+
+                    <!-- Feature 2: USB & Wireless -->
+                    <div class="capability-card">
+                        <div class="cap-icon-box">
+                            <i data-lucide="wifi"></i>
+                        </div>
+                        <h3 class="cap-title">USB & Wireless</h3>
+                        <p class="cap-desc">
+                            Connect seamlessly over Wi-Fi or plug in a USB cable for direct tethering.
+                        </p>
+                    </div>
+
+                    <!-- Feature 3: Xbox & PC Controller Setup -->
+                    <div class="capability-card">
+                        <div class="cap-icon-box">
+                            <i data-lucide="gamepad-2"></i>
+                        </div>
+                        <h3 class="cap-title">Xbox & PC Controller Setup</h3>
+                        <p class="cap-desc">
+                            Emulate a native Xbox 360 gamepad or design custom PC controller layouts with keybindings and vibration feedback.
+                        </p>
+                    </div>
+
+                    <!-- Feature 4: Multi-Key & Keystroke Combos -->
+                    <div class="capability-card">
+                        <div class="cap-icon-box">
+                            <i data-lucide="layers"></i>
+                        </div>
+                        <h3 class="cap-title">Multi-Key Keystroke Combos</h3>
+                        <p class="cap-desc">
+                            Trigger complex multi-key combos, shortcut chains, and gaming macros with a single tap.
+                        </p>
+                    </div>
+
+                    <!-- Feature 5: Quick App & Directory Launches -->
+                    <div class="capability-card">
+                        <div class="cap-icon-box">
+                            <i data-lucide="folder-sync"></i>
+                        </div>
+                        <h3 class="cap-title">Quick App & Directory Launches</h3>
+                        <p class="cap-desc">
+                            Launch your favorite PC games, apps, and folders with a single tap from your phone.
+                        </p>
+                    </div>
+
+                    <!-- Feature 6: Gyroscope -->
+                    <div class="capability-card">
+                        <div class="cap-icon-box">
+                            <i data-lucide="crosshair"></i>
+                        </div>
+                        <h3 class="cap-title">Gyroscope</h3>
+                        <p class="cap-desc">
+                            Use motion controls for precision crosshair aiming in FPS games and steering in racing titles.
+                        </p>
+                    </div>
+
+                    <!-- Feature 7: Mouse & Keyboard -->
+                    <div class="capability-card">
+                        <div class="cap-icon-box">
+                            <i data-lucide="mouse-pointer"></i>
+                        </div>
+                        <h3 class="cap-title">Mouse & Keyboard</h3>
+                        <p class="cap-desc">
+                            Control your desktop with smooth trackpad gestures, scrolling, and custom keyboard shortcuts.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== DOWNLOAD SECTION ==================== -->
+        <section class="section download-section" id="download">
+            <div class="container">
+                <div class="download-container-minimal">
+                    <div class="section-title-box text-center">
+                        <span class="section-micro-label">GET STARTED</span>
+                        <h2 class="section-heading">
+                            Ready to Play,<br>
+                            <span class="serif-italic">Download GamePadX</span>
+                        </h2>
+                    </div>
+
+                    <div class="download-grid-sleek">
+                        <!-- Card 1: Windows Server -->
+                        <div class="download-card-sleek">
+                            <div class="dl-sleek-icon">
+                                <i data-lucide="monitor"></i>
+                            </div>
+                            <div class="dl-sleek-content">
+                                <h3 class="dl-sleek-title">Windows Server</h3>
+                                <p class="dl-sleek-desc">For Windows 10 & 11 (64-bit)</p>
+                            </div>
+                            <a href="https://github.com/Sleepy-07/GamePadX-Pc-Controller-Server/releases" target="_blank" rel="noopener noreferrer" class="btn btn-primary-pill w-100">
+                                <i data-lucide="download"></i>
+                                <span>Download Server (.exe)</span>
+                            </a>
+                        </div>
+
+                        <!-- Card 2: Android App -->
+                        <div class="download-card-sleek">
+                            <div class="dl-sleek-icon">
+                                <i data-lucide="smartphone"></i>
+                            </div>
+                            <div class="dl-sleek-content">
+                                <h3 class="dl-sleek-title">Android App</h3>
+                                <p class="dl-sleek-desc">For Android 7.0 and up</p>
+                            </div>
+                            <a href="https://play.google.com/store/apps/details?id=com.sleepingheads.gamepadx" target="_blank" rel="noopener noreferrer" class="btn btn-secondary-pill w-100">
+                                <i data-lucide="shopping-bag"></i>
+                                <span>Get on Google Play</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== CLEAN MINIMAL SINGLE-ROW FOOTER ==================== -->
+    <footer class="minimal-footer">
+        <div class="container footer-clean-row">
+            <div class="footer-brand-left">
+                <div class="footer-mini-logo">
+                    <img src="assets/logo.png" alt="GamePadX" onerror="this.style.display='none';">
+                </div>
+                <span>&copy; 2026 GamePadX — by <a href="https://github.com/Sleepy-07" target="_blank" rel="noopener noreferrer" class="footer-author-link">@Sleepy-07</a></span>
+            </div>
+
+            <div class="footer-clean-links">
+                <a href="#overview">Overview</a>
+                <a href="#features">Features</a>
+                <a href="#download">Downloads</a>
+                <a href="https://github.com/Sleepy-07/GamePadX-Pc-Controller-Server" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- App Script -->
+    <script src="app.js"></script>
+</body>
+</html>
