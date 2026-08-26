@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — GamePadX: Pc Controller</title>
+    <meta name="description" content="Privacy Policy for GamePadX: Pc Controller and GamePadX Server companion software.">
+    <meta name="keywords" content="GamePadX privacy policy, PC controller privacy, GamePadX data protection">
+    <meta name="author" content="GamePadX">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Privacy Policy — GamePadX: Pc Controller">
+    <meta property="og:description" content="Privacy Policy for GamePadX: Pc Controller and GamePadX Server.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/logo.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="policy-page">
+    <!-- Background Technical Grid & Ambient Lighting -->
+    <div class="bg-canvas">
+        <div class="grid-pattern"></div>
+        <div class="ambient-glow glow-top"></div>
+    </div>
+
+    <!-- ==================== FLOATING DOCK NAVBAR ==================== -->
+    <header class="dock-header-wrapper">
+        <nav class="dock-navbar" id="dockNavbar">
+            <!-- Brand -->
+            <a href="index.html" class="dock-brand">
+                <div class="dock-logo-box">
+                    <img src="assets/logo.png" alt="GamePadX" class="dock-logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <i data-lucide="gamepad-2" class="dock-fallback-icon" style="display: none;"></i>
+                </div>
+                <span class="dock-brand-name">GamePadX</span>
+            </a>
+
+            <!-- Navigation Links -->
+            <div class="dock-nav-links" id="dockNavLinks">
+                <a href="index.html#overview" class="dock-link">Overview</a>
+                <a href="index.html#features" class="dock-link">Features</a>
+                <a href="index.html#download" class="dock-link">Download</a>
+                <a href="privacy.html" class="dock-link active">Privacy Policy</a>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="dock-actions">
+                <a href="index.html" class="dock-btn dock-btn-ghost" title="Back to Home Page">
+                    <i data-lucide="arrow-left"></i>
+                    <span>Back to Home</span>
+                </a>
+                <a href="https://github.com/Sleepy-07/GamePadX-Pc-Controller-Server" target="_blank" rel="noopener noreferrer" class="dock-btn dock-btn-solid">
+                    <i data-lucide="github"></i>
+                    <span>GitHub</span>
+                </a>
+                <button class="dock-mobile-toggle" id="dockMobileToggle" aria-label="Toggle menu">
+                    <i data-lucide="menu" id="menuIcon"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ==================== CLEAN PRIVACY DOCUMENT ==================== -->
+    <main class="policy-main-clean">
+        <div class="container policy-reader-container">
+            <article class="policy-card-clean">
+                <header class="policy-clean-header">
+                    <span class="policy-clean-tag">LEGAL</span>
+                    <h1 class="policy-clean-title">Privacy Policy for GamePadX: Pc Controller</h1>
+                    <p class="policy-clean-date">Last Updated: July 23, 2026</p>
+                </header>
+
+                <div class="policy-clean-body">
+                    <p class="policy-lead-text">
+                        GamePadX is committed to protecting your privacy. This Privacy Policy explains how our mobile application (GamePadX: Pc Controller) and companion host software (GamePadX Server) handle your information.
+                    </p>
+                    <p>
+                        By downloading, installing, or using GamePadX or GamePadX Server, you agree to the collection and use of information in accordance with this policy.
+                    </p>
+
+                    <!-- Section 1 -->
+                    <section class="policy-clean-section">
+                        <h2>1. Information Collection and Use</h2>
+                        <p>
+                            GamePadX is designed with privacy and security at its core. We do not collect, transmit, store, or sell any personal identifiable information (PII) to external cloud servers.
+                        </p>
+                        
+                        <div class="policy-subgroup">
+                            <h3>A. Local Network & Connection Data</h3>
+                            <p>To connect your mobile device to your Windows PC, the app processes the following data strictly within your local network (LAN):</p>
+                            <ul class="policy-bullet-list">
+                                <li><strong>Local IP Address & Port Number:</strong> Used exclusively to establish local UDP/TCP socket communication between your phone and PC.</li>
+                                <li><strong>Device Name & Authentication Token:</strong> Used for local device authorization and saved locally on your device.</li>
+                                <li><strong>Connection Passwords:</strong> Authenticates access between your phone and PC. All passwords are stored locally on your device (APPDATA on PC / Encrypted Storage on Android) and are never uploaded to any external server.</li>
+                            </ul>
+                        </div>
+
+                        <div class="policy-subgroup">
+                            <h3>B. Controller & Input Data</h3>
+                            <p>
+                                Touch inputs, virtual Xbox gamepad events, mouse trackpad movements, and keyboard keystrokes are processed in real-time to control your host PC. Input data is transmitted directly over your private local network or USB tethering connection and is never recorded, stored, or analyzed.
+                            </p>
+                        </div>
+                    </section>
+
+                    <!-- Section 2 -->
+                    <section class="policy-clean-section">
+                        <h2>2. Android App Permissions</h2>
+                        <p>
+                            To function as a remote gamepad and controller, GamePadX: Pc Controller requests the following Android permissions:
+                        </p>
+
+                        <div class="permissions-table-wrap">
+                            <table class="permissions-table">
+                                <thead>
+                                    <tr>
+                                        <th>Permission</th>
+                                        <th>Purpose</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>INTERNET</code></td>
+                                        <td>Required to send gamepad input data to your PC host over your local Wi-Fi network.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>ACCESS_NETWORK_STATE</code></td>
+                                        <td>Detects Wi-Fi network connection status to discover local GamePadX servers.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>ACCESS_WIFI_STATE</code></td>
+                                        <td>Allows local Wi-Fi multicast and broadcast discovery of PC servers.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>VIBRATE</code></td>
+                                        <td>Provides haptic vibration feedback when pressing virtual controller buttons.</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>FOREGROUND_SERVICE</code></td>
+                                        <td>Keeps the controller connection active and uninterrupted during gameplay.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
+
+                    <!-- Section 3 -->
+                    <section class="policy-clean-section">
+                        <h2>3. Data Security</h2>
+                        <ul class="policy-bullet-list">
+                            <li><strong>Local Peer-to-Peer Communication:</strong> All data stays 100% within your private home network or direct USB connection.</li>
+                            <li><strong>Encrypted Local Authentication:</strong> Handshake authorization passwords and tokens use industry-standard hashing (SHA-256 / PBKDF2) to prevent unauthorized local network connections.</li>
+                            <li><strong>No Third-Party Tracking:</strong> GamePadX does not include third-party advertising SDKs, tracking pixels, or user behavior analytics.</li>
+                        </ul>
+                    </section>
+
+                    <!-- Section 4 -->
+                    <section class="policy-clean-section">
+                        <h2>4. Children’s Privacy</h2>
+                        <p>
+                            Our application does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13.
+                        </p>
+                    </section>
+
+                    <!-- Section 5 -->
+                    <section class="policy-clean-section">
+                        <h2>5. Third-Party Libraries & Drivers</h2>
+                        <ul class="policy-bullet-list">
+                            <li><strong>Google Play Services / Billing:</strong> Handles in-app purchases and subscriptions securely through Google Play.</li>
+                            <li><strong>ViGEmBus Driver:</strong> An open-source Windows driver used on the host PC solely to emulate virtual Xbox 360 and DualShock controllers.</li>
+                        </ul>
+                    </section>
+
+                    <!-- Section 6 -->
+                    <section class="policy-clean-section">
+                        <h2>6. Changes to This Privacy Policy</h2>
+                        <p>
+                            We may update our Privacy Policy from time to time. You are advised to review this page periodically for any changes. Any updates will be effective immediately upon posting.
+                        </p>
+                    </section>
+
+                    <!-- Section 7 -->
+                    <section class="policy-clean-section">
+                        <h2>7. Contact Us</h2>
+                        <p>
+                            If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at:
+                        </p>
+                        <div class="policy-contact-box">
+                            <p><strong>Support Email:</strong> <a href="mailto:contactsleepingheads@gmail.com">contactsleepingheads@gmail.com</a></p>
+                            <p><strong>Website:</strong> <a href="https://sleepy-07.github.io/GamePadX/">https://sleepy-07.github.io/GamePadX/</a></p>
+                        </div>
+                    </section>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- ==================== CLEAN MINIMAL SINGLE-ROW FOOTER ==================== -->
+    <footer class="minimal-footer">
+        <div class="container footer-clean-row">
+            <div class="footer-brand-left">
+                <div class="footer-mini-logo">
+                    <img src="assets/logo.png" alt="GamePadX" onerror="this.style.display='none';">
+                </div>
+                <span>&copy; 2026 GamePadX — by <a href="https://github.com/Sleepy-07" target="_blank" rel="noopener noreferrer" class="footer-author-link">@Sleepy-07</a></span>
+            </div>
+
+            <div class="footer-clean-links">
+                <a href="index.html#overview">Overview</a>
+                <a href="index.html#features">Features</a>
+                <a href="index.html#download">Downloads</a>
+                <a href="privacy.html" class="active-footer-link">Privacy Policy</a>
+                <a href="https://github.com/Sleepy-07/GamePadX-Pc-Controller-Server" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- App Script -->
+    <script src="app.js"></script>
+</body>
+</html>

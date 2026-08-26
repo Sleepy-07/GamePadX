@@ -42,7 +42,7 @@
                     <img src="assets/logo.png" alt="GamePadX" class="dock-logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
                     <i data-lucide="gamepad-2" class="dock-fallback-icon" style="display: none;"></i>
                 </div>
-                <span class="dock-brand-name">GamePad<span class="dock-brand-accent">X</span></span>
+                <span class="dock-brand-name">GamePadX</span>
             </a>
 
             <!-- Navigation Links -->
@@ -50,6 +50,7 @@
                 <a href="#overview" class="dock-link active">Overview</a>
                 <a href="#features" class="dock-link">Features</a>
                 <a href="#download" class="dock-link">Download</a>
+                <a href="privacy.html" class="dock-link">Privacy & Policies</a>
             </div>
 
             <!-- Action Buttons (Star Project & Get Server) -->
@@ -99,19 +100,19 @@
                             </div>
                         </div>
 
-                        <!-- 2. Left Portrait Phone: 9:20 App Home (App_Home_Screen.jpg) -->
+                        <!-- 2. Left Portrait Phone: 9:20 App Home (homeScreen.jpg) -->
                         <div class="phone-device-card portrait-card animate-phone-float">
                             <div class="device-tag-header">App Home & Sync</div>
                             <div class="phone-frame-clean portrait-frame">
-                                <img src="assets/App_Home_Screen.jpg" alt="GamePadX Mobile App Home" class="pixel-perfect-img">
+                                <img src="assets/android/homeScreen.jpg" alt="GamePadX Mobile App Home" class="pixel-perfect-img">
                             </div>
                         </div>
 
-                        <!-- 3. Right Landscape Phone: 20:9 Controller Layout (layoutImage1.jpg) -->
+                        <!-- 3. Right Landscape Phone: 20:9 Controller Layout (mulitlayout1.jpg.jpg) -->
                         <div class="phone-device-card landscape-card animate-landscape-float">
                             <div class="device-tag-header">In-Game Controller Layout</div>
                             <div class="phone-frame-clean landscape-frame">
-                                <img src="assets/layoutImage1.jpg" alt="GamePadX Active Controller Layout" class="pixel-perfect-img">
+                                <img src="assets/android/mulitlayout1.jpg.jpg" alt="GamePadX Active Controller Layout" class="pixel-perfect-img">
                             </div>
                         </div>
                     </div>
@@ -151,7 +152,7 @@
 
                 <!-- Hero Action Buttons with Exact Download Links -->
                 <div class="hero-actions-row">
-                    <a href="https://github.com/Sleepy-07/GamePadX-Pc-Controller-Server/releases" target="_blank" rel="noopener noreferrer" class="btn btn-primary-pill" id="heroPrimaryDownload">
+                    <a href="#download" class="btn btn-primary-pill" id="heroPrimaryDownload">
                         <i data-lucide="download"></i>
                         <span>Download Windows Server</span>
                     </a>
@@ -261,44 +262,242 @@
         <!-- ==================== DOWNLOAD SECTION ==================== -->
         <section class="section download-section" id="download">
             <div class="container">
-                <div class="download-container-minimal">
-                    <div class="section-title-box text-center">
-                        <span class="section-micro-label">GET STARTED</span>
-                        <h2 class="section-heading">
-                            Ready to Play,<br>
-                            <span class="serif-italic">Download GamePadX</span>
-                        </h2>
-                    </div>
+                <div class="section-title-box text-center">
+                    <span class="section-micro-label">GET STARTED & DOWNLOAD</span>
+                    <h2 class="section-heading">
+                        Experience GamePadX,<br>
+                        <span class="serif-italic">On Windows PC & Android</span>
+                    </h2>
+                    <p class="section-subtext">
+                        Download the companion Windows server and mobile controller app to start gaming with ultra low latency.
+                    </p>
+                </div>
 
-                    <div class="download-grid-sleek">
-                        <!-- Card 1: Windows Server -->
-                        <div class="download-card-sleek">
-                            <div class="dl-sleek-icon">
-                                <i data-lucide="monitor"></i>
+                <div class="download-stack-container">
+                    <!-- ==================== 1. DESKTOP SERVER CARD ==================== -->
+                    <div class="platform-full-card">
+                        <!-- Top Info Row -->
+                        <div class="platform-info-header">
+                            <div class="platform-info-main">
+                                <span class="platform-badge"><i data-lucide="monitor"></i> Windows 10 & 11 (64-Bit)</span>
+                                <h3 class="platform-card-title">GamePadX Desktop Server</h3>
+                                <p class="platform-card-desc">
+                                    The companion host application for your Windows PC. Provides ultra low-latency virtual Xbox controller emulation, instant Wi-Fi/USB connections, layout syncing, and one-tap PC app launching.
+                                </p>
                             </div>
-                            <div class="dl-sleek-content">
-                                <h3 class="dl-sleek-title">Windows Server</h3>
-                                <p class="dl-sleek-desc">For Windows 10 & 11 (64-bit)</p>
+                            <div class="platform-download-cta">
+                                <a href="https://github.com/Sleepy-07/GamePadX-Pc-Controller-Server/releases" target="_blank" rel="noopener noreferrer" class="btn btn-primary-pill">
+                                    <i data-lucide="download"></i>
+                                    <span>Download Server (.exe)</span>
+                                </a>
+                                <a href="https://github.com/Sleepy-07/GamePadX-Pc-Controller-Server" target="_blank" rel="noopener noreferrer" class="btn btn-secondary-pill">
+                                    <i data-lucide="github"></i>
+                                    <span>View on GitHub</span>
+                                </a>
+                                <span class="cta-micro-note">Version 1.2.0 </span>
                             </div>
-                            <a href="https://github.com/Sleepy-07/GamePadX-Pc-Controller-Server/releases" target="_blank" rel="noopener noreferrer" class="btn btn-primary-pill w-100">
-                                <i data-lucide="download"></i>
-                                <span>Download Server (.exe)</span>
-                            </a>
                         </div>
 
-                        <!-- Card 2: Android App -->
-                        <div class="download-card-sleek">
-                            <div class="dl-sleek-icon">
-                                <i data-lucide="smartphone"></i>
+                        <!-- Horizontal Scroll View for Desktop Screenshots -->
+                        <div class="gallery-scroll-wrapper">
+                            <div class="gallery-scroll-header">
+                                <div class="gallery-scroll-title">
+                                    <i data-lucide="images"></i>
+                                    <span>Desktop Server Screenshots</span>
+                                </div>
+
                             </div>
-                            <div class="dl-sleek-content">
-                                <h3 class="dl-sleek-title">Android App</h3>
-                                <p class="dl-sleek-desc">For Android 7.0 and up</p>
+
+                            <div class="horizontal-scroll-track desktop-scroll-track">
+                                <!-- 1. Connection Hub -->
+                                <div class="screenshot-window-card">
+                                    <div class="window-bar-mini">
+
+                                        <span class="w-label">Connection Manager</span>
+                                    </div>
+                                    <div class="screenshot-img-box desktop-aspect">
+                                        <img src="assets/desktop/connectionSection.png" alt="GamePadX Connection Manager" loading="lazy">
+                                    </div>
+                                    <div class="screenshot-caption">
+                                        <h4>Connection Hub</h4>
+                                        <p>Automatic LAN discovery & direct USB tethering.</p>
+                                    </div>
+                                </div>
+
+                                <!-- 2. Game Console & Controller -->
+                                <div class="screenshot-window-card">
+                                    <div class="window-bar-mini">
+
+                                        <span class="w-label">Controller Console</span>
+                                    </div>
+                                    <div class="screenshot-img-box desktop-aspect">
+                                        <img src="assets/desktop/GameConsoleSection.png" alt="Game Console & Controller Emulation" loading="lazy">
+                                    </div>
+                                    <div class="screenshot-caption">
+                                        <h4>Controller Console</h4>
+                                        <p>Real-time input telemetry & virtual Xbox slot mapping.</p>
+                                    </div>
+                                </div>
+
+                                <!-- 3. Sync Center -->
+                                <div class="screenshot-window-card">
+                                    <div class="window-bar-mini">
+
+                                        <span class="w-label">Sync Center</span>
+                                    </div>
+                                    <div class="screenshot-img-box desktop-aspect">
+                                        <img src="assets/desktop/SyncCenter.png" alt="Sync Center Vault" loading="lazy">
+                                    </div>
+                                    <div class="screenshot-caption">
+                                        <h4>Sync Center</h4>
+                                        <p>Synchronize App & Directory shorcuts, layouts & shortcut vaults.</p>
+                                    </div>
+                                </div>
+
+                                <!-- 4. App Shortcuts Creator -->
+                                <div class="screenshot-window-card">
+                                    <div class="window-bar-mini">
+
+                                        <span class="w-label">App Launcher</span>
+                                    </div>
+                                    <div class="screenshot-img-box desktop-aspect">
+                                        <img src="assets/desktop/AppShotcutCreating.png" alt="App & Game Shortcuts Creator" loading="lazy">
+                                    </div>
+                                    <div class="screenshot-caption">
+                                        <h4>Shortcut Launcher</h4>
+                                        <p>Add one-tap PC game launchers and directory shortcuts.</p>
+                                    </div>
+                                </div>
+
+                                <!-- 5. Server Settings -->
+                                <div class="screenshot-window-card">
+                                    <div class="window-bar-mini">
+
+                                        <span class="w-label">Settings</span>
+                                    </div>
+                                    <div class="screenshot-img-box desktop-aspect">
+                                        <img src="assets/desktop/SettingSection.png" alt="Server Configuration & Settings" loading="lazy">
+                                    </div>
+                                    <div class="screenshot-caption">
+                                        <h4>Configuration & Ports</h4>
+                                        <p>Custom Server Settings, security PINs, and startup behavior.</p>
+                                    </div>
+                                </div>
                             </div>
-                            <a href="https://play.google.com/store/apps/details?id=com.sleepingheads.gamepadx" target="_blank" rel="noopener noreferrer" class="btn btn-secondary-pill w-100">
-                                <i data-lucide="shopping-bag"></i>
-                                <span>Get on Google Play</span>
-                            </a>
+                        </div>
+                    </div>
+
+                    <!-- ==================== 2. ANDROID MOBILE APP CARD ==================== -->
+                    <div class="platform-full-card">
+                        <!-- Top Info Row -->
+                        <div class="platform-info-header">
+                            <div class="platform-info-main">
+                                <span class="platform-badge badge-green"><i data-lucide="smartphone"></i> Android 7.0 & Up • Google Play</span>
+                                <h3 class="platform-card-title">GamePadX Mobile Controller</h3>
+                                <p class="platform-card-desc">
+                                    Turn your Android smartphone or tablet into a high-precision PC gamepad, gyroscope motion steering controller, wireless desktop trackpad, and remote launcher with customizable haptic feedback.
+                                </p>
+                            </div>
+                            <div class="platform-download-cta">
+                                <a href="https://play.google.com/store/apps/details?id=com.sleepingheads.gamepadx" target="_blank" rel="noopener noreferrer" class="btn btn-primary-pill">
+                                    <i data-lucide="shopping-bag"></i>
+                                    <span>Get on Google Play</span>
+                                </a>
+                                <!-- <a href="https://github.com/Sleepy-07/GamePadX-Pc-Controller-Server/releases" target="_blank" rel="noopener noreferrer" class="btn btn-secondary-pill">
+                                    <i data-lucide="download"></i>
+                                    <span>Download APK (.apk)</span>
+                                </a> -->
+                                <span class="cta-micro-note">Supports Phones & Tablets • Ultra Low Latency</span>
+                            </div>
+                        </div>
+
+                        <!-- Horizontal Scroll View for Android Screenshots -->
+                        <div class="gallery-scroll-wrapper">
+                            <div class="gallery-scroll-header">
+                                <div class="gallery-scroll-title">
+                                    <i data-lucide="smartphone"></i>
+                                    <span>Android Controller Screenshots</span>
+                                </div>
+                            </div>
+
+                            <div class="horizontal-scroll-track android-scroll-track">
+                                <!-- 1. Home Screen (Portrait) -->
+                                <div class="screenshot-mobile-card portrait-item">
+                                    <div class="mobile-frame-badge">Home Dashboard</div>
+                                    <div class="mobile-frame-box portrait-aspect">
+                                        <img src="assets/android/homeScreen.jpg" alt="GamePadX Mobile Home Screen" loading="lazy">
+                                    </div>
+                                    <div class="screenshot-caption">
+                                        <h4>App Home</h4>
+                                        <p>Fast connection hub and server discovery.</p>
+                                    </div>
+                                </div>
+
+                                
+                                <!-- 4. App Shortcuts (Portrait) -->
+                                <div class="screenshot-mobile-card portrait-item">
+                                    <div class="mobile-frame-badge">App Shortcuts</div>
+                                    <div class="mobile-frame-box portrait-aspect">
+                                        <img src="assets/android/app-shotcuts.jpg" alt="App & Game Shortcuts Launcher" loading="lazy">
+                                    </div>
+                                    <div class="screenshot-caption">
+                                        <h4>App Shortcuts</h4>
+                                        <p>One-tap remote launch for your PC games and apps.</p>
+                                    </div>
+                                </div>
+
+                                <!-- 5. Directory Shortcuts (Portrait) -->
+                                <div class="screenshot-mobile-card portrait-item">
+                                    <div class="mobile-frame-badge">Folder Launcher</div>
+                                    <div class="mobile-frame-box portrait-aspect">
+                                        <img src="assets/android/direcotryShorcuts.jpg" alt="Directory & Folder Shortcuts" loading="lazy">
+                                    </div>
+                                    <div class="screenshot-caption">
+                                        <h4>Folder Launcher</h4>
+                                        <p>Instant remote access to folders on your PC.</p>
+                                    </div>
+                                </div>
+
+                                <!-- 2. Stacked Multi-Layout Profiles (Landscape) -->
+                                <div class="screenshot-mobile-card landscape-item stacked-layouts-card">
+                                    <div class="mobile-frame-badge">
+                                        <span>Multi-Layout Profiles (Instant 1-Click Switch)</span>
+                                    </div>
+                                    <div class="mobile-frame-box stacked-aspect">
+                                        <div class="stacked-layouts-container">
+                                            <div class="stacked-layout-layer">
+                                                <!-- <span class="layer-tag">Xbox 360</span> -->
+                                                <img src="assets/android/mulitlayout1.jpg.jpg" alt="Xbox 360 Controller Layout" loading="lazy">
+                                            </div>
+                                            <div class="stacked-layout-layer">
+                                                <!-- <span class="layer-tag">Action / Shooter</sp/an> -->
+                                                <img src="assets/android/mulitlayout2.jpg" alt="Action Shooter Controller Layout" loading="lazy">
+                                            </div>
+                                            <div class="stacked-layout-layer">
+                                                <!-- <span class="layer-tag">Racing & Sim</span> -->
+                                                <img src="assets/android/mulitlayout3.jpg" alt="Racing & Simulation Layout" loading="lazy">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="screenshot-caption">
+                                        <h4>Multi-Layout Profiles</h4>
+                                        <p>Pre-configured and custom layouts ready to switch on the fly.</p>
+                                    </div>
+                                </div>
+
+                                <!-- 3. Visual Layout Editor (Landscape) -->
+                                <div class="screenshot-mobile-card landscape-item">
+                                    <div class="mobile-frame-badge">Custom Editor</div>
+                                    <div class="mobile-frame-box landscape-aspect">
+                                        <img src="assets/android/editingLayouts.jpg" alt="Custom Layout Editor" loading="lazy">
+                                    </div>
+                                    <div class="screenshot-caption">
+                                        <h4>Layout Editor</h4>
+                                        <p>Drag, resize, and rebind buttons to custom keystrokes.</p>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -320,6 +519,7 @@
                 <a href="#overview">Overview</a>
                 <a href="#features">Features</a>
                 <a href="#download">Downloads</a>
+                <a href="privacy.html">Privacy Policy</a>
                 <a href="https://github.com/Sleepy-07/GamePadX-Pc-Controller-Server" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
         </div>
