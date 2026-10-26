@@ -60,14 +60,17 @@ We believe in absolute transparency. Here is the exact truth about how GamePadX 
 ## ⚡ Features & How It Works
 
 * **Virtual Controller Emulation**: Uses the industry-standard **ViGEmBus** driver to emulate real Xbox 360 / DualShock gamepads recognized natively by Steam, Epic Games, EA, PC Game Pass, and emulators.
-* **Low Latency Local Input**: UDP auto-discovery for instant connection over Wi-Fi, paired with encrypted TCP socket streams for zero-delay controls.
+* **Auto Game Detection**: Automatically detects when bound PC games launch and activates your custom controller profile on your phone with real game logos.
+* **Clipboard & Screenshot Sync**: Seamlessly sync copied text and send captured screenshots from your mobile directly to your Windows PC clipboard.
+* **Low Latency Local Input**: UDP auto-discovery for instant connection over Wi-Fi/Hotspot or USB tethering, paired with encrypted TCP socket streams for zero-delay controls.
 * **Trackpad & Gestures**: Smooth mouse cursor movements, left/right clicks, and vertical scroll accumulation.
+* **Real-time Update Notifications**: In-app live checking for new releases with one-click direct updates.
 
 ---
 
 ## 💻 Installation & Setup
 
-1. **Download Installer**: Download `GamePadX_Server_Setup_v1.exe` from the official release page.
+1. **Download Installer**: Download `GamePadX_Receiver_Setup_v1.3.0.exe` from the official [Releases page](https://github.com/Sleepy-07/GamePadX/releases).
 2. **Run Installer**: Follow the SmartScreen bypass steps above if prompted.
 3. **Driver Setup**: The installer automatically includes the required **ViGEmBus** driver (`ViGEmBus_1.22.0`). Allow driver installation when prompted.
 4. **Pair App**:
